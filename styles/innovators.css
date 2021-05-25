@@ -1,21 +1,11 @@
 .menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: fixed;
-    bottom: 0;
-    left: 50px;
+    bottom: 0; 
+    left: 27%;
 }
 
-img{
-    width: 100px;
-    height: 100px;
-}
-
-
-img:hover{
-    cursor: pointer;
-    opacity: 0.7;
-}
 
 .play {
 	box-shadow:inset 0px 1px 0px 0px #9acc85;
@@ -23,8 +13,13 @@ img:hover{
 	background-color:#74ad5a;
 	border-radius:42px;
 	border:4px solid #3b6e22;
-	display:inline-block;
-	cursor:pointer;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	cursor: pointer;
 	color:#ffffff;
 	font-family:Arial;
 	font-size:14px;
@@ -35,15 +30,16 @@ img:hover{
     text-align: center;
     width: 65px;
     height: 15px;
-    margin-top: 10px;
+
+	margin: 0 105px 100px 0;
 }
 .play:hover {
 	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
 	background-color:#68a54b;
 }
 .play:active {
-	position:relative;
-	top:1px;
+	position: relative;
+	top: 1px;
 }
 
 
@@ -53,7 +49,12 @@ img:hover{
 	background-color:#bd3d3d;
 	border-radius:42px;
 	border:4px solid #6e2222;
-	display:inline-block;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
@@ -65,8 +66,6 @@ img:hover{
     text-align: center;
     width: 65px;
     height: 15px;
-    margin-top: 5px;
-    margin-bottom: 30px;
 }
 .pause:hover {
 	background:linear-gradient(to bottom, #ba2929 5%, #bd3d3d 100%);
@@ -74,9 +73,52 @@ img:hover{
 }
 .pause:active {
 	position:relative;
-	top:1px;
+	top: 1px;
 }
 
+
+
+.back-button__link{
+
+	position: fixed;
+	top: 10px;
+	left: 10px;
+
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	border-radius:42px;
+	border:4px solid #3b6e22;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	cursor: pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	font-style:italic;
+	padding:15px 15px;
+	text-decoration:none;
+    text-align: center;
+    width: 65px;
+    height: 15px;
+
+	margin: 0 105px 100px 0;
+
+	text-decoration: none;
+	font-size: 14px;
+	display: inline-block;
+
+}
+
+.back-button__link:hover{
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	background-color:#68a54b;
+}
 
 @media only screen and (max-width: 768px){
     .play, .pause, .instaLink{
@@ -95,4 +137,14 @@ img:hover{
     .play, .pause {
         margin-top: 120px;
     }
+
+	.back-button__link{
+		font-size: 21.5pt;
+		width: 200px;
+		height: 115px;
+		margin: 50px 0 0 50px;
+	}
 }
+
+
+
