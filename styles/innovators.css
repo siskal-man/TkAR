@@ -120,6 +120,11 @@
 	background-color:#68a54b;
 }
 
+.link{
+	text-decoration: none;
+	color: blanchedalmond;
+}
+
 @media only screen and (max-width: 768px){
     .play, .pause, .instaLink{
         width: 300px;
