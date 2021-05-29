@@ -1,13 +1,16 @@
 let playBtn = document.querySelector('.play');
 let pauseBtn = document.querySelector('.pause');
-let backBtn = document.querySelector('.back-button__link');
-let tigerSound = document.querySelector('.tigerSound');
+
+
+// let backBtn = document.querySelector('.back-button__link');
+
+let sound = document.querySelector('.sound');
 
 
 playBtn.addEventListener('click', function(){
-    tigerSound.play();
+    sound.play();
 });
 
 pauseBtn.addEventListener('click', function(){
-    tigerSound.pause();
+    sound.pause();
 })
